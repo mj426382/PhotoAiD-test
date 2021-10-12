@@ -1,0 +1,103 @@
+.img {
+transform: rotate(90deg);
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+photos {
+	float: left;
+	position: absolute;
+	backdrop-filter: blur(10px);
+	clear: right;
+	display: block;
+}
+
+h1 {
+color: #FFFFFF;
+font-family: arial, sans-serif;
+font-size: 72px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+}
+
+.parent {
+  flex: auto;
+  position: relative;
+  clear: right;
+  color: #FFFFFF;
+  font-family: arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px red solid;
+}
+.image2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border: 1px green solid;
+}
+
+.imagesLeft{
+ float: left;
+ margin: 5px;
+}
+.imagesRight{ 
+ float: right;
+ margin: 5px;
+ clear: right;
+}
+
+.image{
+ margin-left: auto;
+ margin-right: auto;
+ width: 8em;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  cursor: pointer;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.rotated {
+  transform: rotateY(60deg);
+}
